@@ -145,9 +145,11 @@ tag3
 
 ```
 
-lembrando que a api deve estar exposta no endereço para o CLI realizar a importação 
+lembrando que a api deve estar exposta no endereço 
 
 ``` http://localhost:3333```
+
+para o CLI realizar a importação 
 
 ### 3. Interface WEB
 
