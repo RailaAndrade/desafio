@@ -5,6 +5,7 @@
 Para executar a API abra a pasta desafio-api 
 
 
+**Instalação de dependências**
  Não se esqueça de rodar o comando
 
 ```yarn install```
@@ -13,7 +14,6 @@ Utilize o Docker para carregar e depois disponibilizar todos os serviços necess
 
 ```docker-compose up```
 
-**Instalação de dependências**
 
 
 
