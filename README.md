@@ -20,9 +20,7 @@ O servidor irá executar
 ### para criar uma tag utilize a rota 
 
 ```POST -> /tags
-
 com o body 
-
 {
 	"nome":"tag3"
 }
@@ -59,8 +57,9 @@ com alguma alteração no body
 
 ### para importar csv de TAGS utilize a rota 
 
-```POST -> /tags/import
-  o arquivo deve ser passado como multipart/form-data
+```
+POST -> /tags/import
+o arquivo deve ser passado como multipart/form-data
 
 ```
 ### para criar um card utilize a rota 
@@ -105,8 +104,9 @@ com alguma alteração no body
 
 ### para importar csv de CARDS utilize a rota 
 
-```POST -> /cards/import
-  o arquivo deve ser passado como multipart/form-data
+```
+POST -> /cards/import
+o arquivo deve ser passado como multipart/form-data
 
 ```
 
