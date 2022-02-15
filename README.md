@@ -4,87 +4,58 @@ Precisamos desenvolver uma ferramenta para criação de Cards de conteúdo espor
 
 ### 1. Interace HTTP REST API
 
-Ações da API
+Para executar a API abra a pasta desafio-api 
 
-- Criar card
-- Ler card
-- Remover card
-- Atualizar card
-- Listar card
-  - Filtrar por tags
+Utilize o Docker para carregar e depois disponibilizar todos os serviços necessários ao funcionamento do Siga-Doc:
 
-Um card possui os campos: 
-```
-{
-  "id": // identificador
-  "texto" // texto do card
-  "data_criacao" // data da criação do card
-  "data_modificacao" // data da última alteração do card
-  "tags" // tags vinculas ao card
-}
-```
+```docker-compose up```
 
-- Criar Tag
-- Ler Tag
-- Remover Tag
-- Atualizar Tag
+**Instalação de dependências**
 
-```
-Uma tag possui os campos:
-{
-  "id" // identificador
-  "name" // nome da tag
-}
-```
+ Não se esqueça de rodar o comando
 
-Temos uma estimativa de milhares de criações de cards diariamente. A preocupação com performance será avaliada.
+```yarn install```
+
+
 
 ### 2. CLI para importação dos card
 
-Necessitamos importar os conteúdos do nosso sistema de dados esportivos para gerar nossos cards e precisamos de uma ferramenta para auxiliar essa tarefa.
+No repositório está o código do CLI porém você já pode intalar a depêndencia encontrada no link
 
+```https://www.npmjs.com/package/desafio-cli```
 
-Dado um csv de "cards", faça um CLI (Command Line Interface) que importe os dados para o Insights.
+basta  executar 
 
-CSV exemplo:
+```yarn global add desafio-cli```
 
+para importar um arquivo de CARDS como no exemplo
+
+```desafio-cli import:card </folder/CARDS.csv>```
+
+CSV exemplo
 ```
-text,tag
 Lorem ipsum dolor sit amet., tag1;tag2;tag3
 Mauris fringilla non quam vel lacinia,tag3
-Cras in tempus libero,
+Cras in tempus libero
+
 ```
+
+para importar um arquivo de TAGS como no exemplo
+
+```desafio-cli import:tag </folder/TAGS.csv>```
+
+CSV exemplo
+```
+tag1,
+tag2,
+tag3
+
+```
+
+lembrando que a api deve estar exposta no endereço para o CLI realizar a importação 
+
+``` http://localhost:3333```
+
 ### 3. Interface WEB
 
-Após termos nossa api desenvolvida, precisamos viabilizar uma interface frontend para nossos usuários interagirem.
-
-Nosso time de UX desenhou as [telas](https://www.sketch.com/s/3f91077d-21c0-4040-8fae-b89d69809d9b) e disponibilizou para você!
-
-Dê preferência aos frameworks como o Vuetify para aproveitar os componentes já prontos.
-
-Clique no box com o botão de play para entrar no modo de navegação com os hotspots que indicam o fluxo.
-
-Clique em cada uma das telas e utilize a funcionalidade de "Inspector" para ter acesso ao guia de css.
-
-Os ícones utilizados no projeto são do [Material Design](https://material.io/resources/icons/?style=baseline)
-
-Utilize o botão "Download Assets" para baixar a marca do produto Insights.
-
-
-### Requerimentos:
-- Linguagens de programação backend:
-  - Python
-  - NodeJs
-  - C#
-- Framework frontend
-  - VueJS
-  - ReactJS
-  - Angular
-- Fidelidade de layout
-- Code Style
-- Teste unitário
-- Documentação
-  - Descrição
-  - Como rodar
-  - API DOC (openapi/swagger)
-
+... loading
