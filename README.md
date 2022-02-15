@@ -17,6 +17,9 @@ Utilize o Docker para carregar e depois disponibilizar todos os serviços necess
 
 O servidor irá executar
 
+Rode as migrations 
+``` yarn typeorm migration:run```
+
 ### para criar uma tag utilize a rota 
 
 ```POST -> /tags
