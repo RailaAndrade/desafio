@@ -15,8 +15,100 @@ Utilize o Docker para carregar e depois disponibilizar todos os serviços necess
 ```docker-compose up```
 
 
+O servidor irá executar
+
+### para criar uma tag utilize a rota 
+
+```POST -> /tags
+
+com o body 
+
+{
+	"nome":"tag3"
+}
+
+```
 
 
+### para listar tags utilize a rota
+```
+GET -> /tags
+```
+
+### para deletar tags utilize a rota
+
+```
+DELETE-> /tags/id
+
+ex: http://localhost:3333/tags/c38ef249-f04f-4d21-b798-a8aa777ebea1
+```
+
+### para atualizar tags utilize a rota
+```
+PATCH-> /tags/id
+
+ex: http://localhost:3333/tags/c38ef249-f04f-4d21-b798-a8aa777ebea1
+
+com alguma alteração no body 
+
+{
+	"nome":"gols"
+}
+```
+
+
+### para importar csv de TAGS utilize a rota 
+
+```POST -> /tags/import
+  o arquivo deve ser passado como multipart/form-data
+
+```
+### para criar um card utilize a rota 
+
+```POST -> /cards
+
+com o body 
+{
+	"texto":"teste do teste",
+	"tags":["tag1"]
+}
+
+```
+
+
+### para listar cards utilize a rota
+```
+GET -> /cards
+```
+
+### para deletar um card utilize a rota
+
+```
+DELETE-> /cards/id
+
+ex: http://localhost:3333/cards/c38ef249-f04f-4d21-b798-a8aa777ebea1
+```
+
+### para atualizar um card utilize a rota
+```
+PATCH-> /cards/id
+
+ex: http://localhost:3333/cards/c38ef249-f04f-4d21-b798-a8aa777ebea1
+
+com alguma alteração no body 
+
+{
+	"texto":"gols"
+}
+```
+
+
+### para importar csv de CARDS utilize a rota 
+
+```POST -> /cards/import
+  o arquivo deve ser passado como multipart/form-data
+
+```
 
 
 ### 2. CLI para importação dos card
