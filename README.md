@@ -1,10 +1,13 @@
 ## Desafio
 
-Precisamos desenvolver uma ferramenta para criação de Cards de conteúdo esportivos (Insights).
-
 ### 1. Interace HTTP REST API
 
 Para executar a API abra a pasta desafio-api 
+
+
+ Não se esqueça de rodar o comando
+
+```yarn install```
 
 Utilize o Docker para carregar e depois disponibilizar todos os serviços necessários ao funcionamento do Siga-Doc:
 
@@ -12,9 +15,7 @@ Utilize o Docker para carregar e depois disponibilizar todos os serviços necess
 
 **Instalação de dependências**
 
- Não se esqueça de rodar o comando
 
-```yarn install```
 
 
 
